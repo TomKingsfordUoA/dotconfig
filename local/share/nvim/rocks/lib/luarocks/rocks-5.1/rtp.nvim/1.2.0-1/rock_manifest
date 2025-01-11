@@ -1,0 +1,9 @@
+rock_manifest = {
+   doc = {
+      ["rtp_nvim.txt"] = "690cbf43ac722c4be3e7abe537ba789a"
+   },
+   lua = {
+      ["rtp_nvim.lua"] = "6fe6efc44dcfa5c302f4f5ab52e940e0"
+   },
+   ["rtp.nvim-1.2.0-1.rockspec"] = "23c7d1863b9a0a180adb88b2da24d1a6"
+}

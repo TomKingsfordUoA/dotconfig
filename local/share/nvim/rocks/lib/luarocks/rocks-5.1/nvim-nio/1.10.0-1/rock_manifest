@@ -1,0 +1,24 @@
+rock_manifest = {
+   doc = {
+      ["nio.txt"] = "4f21077cbaf293512f9652e682303cdc"
+   },
+   lua = {
+      nio = {
+         ["control.lua"] = "3e29714553a4961865b0961dbc9684ad",
+         ["curl.lua"] = "c85dee82f429e1bb282251c984bc7d6c",
+         ["file.lua"] = "501af96e437b9c468e84cf1bec2f2236",
+         ["init.lua"] = "dd7860c655556793810bd12d5c1f1866",
+         ["logger.lua"] = "9809527b33ab8c753c723759121d28a8",
+         ["lsp-types.lua"] = "d2d884df656e47e2aabd11f55acb8d09",
+         ["lsp.lua"] = "b20eec54511c5beed29d3bedcf844c08",
+         ["process.lua"] = "8a908d5f5c6b14ad33b8f534e867a85e",
+         ["streams.lua"] = "f83e667aef1798d3152253e5f0e3adad",
+         ["tasks.lua"] = "d9307241db55cf7ce557fcecf5003a8b",
+         ["tests.lua"] = "e8f98391a0e5daba4b7ff5d0987eb70c",
+         ["ui.lua"] = "a42d634c9c41403b6ad98a2fddc996f9",
+         ["util.lua"] = "4701ad608aba1495ea687e62cd67c559",
+         ["uv.lua"] = "d4788a4769c1b183a0d9da64a1c148ea"
+      }
+   },
+   ["nvim-nio-1.10.0-1.rockspec"] = "93fec191108e8e18d52d69e1abdc285c"
+}

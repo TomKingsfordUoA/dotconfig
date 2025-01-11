@@ -1,0 +1,52 @@
+rock_manifest = {
+   doc = {
+      ["rocks.txt"] = "197f2c73a5513b7a09d93b0473242428"
+   },
+   lua = {
+      rocks = {
+         ["adapter.lua"] = "882c444f37616ca4696217c15475027f",
+         api = {
+            ["hooks.lua"] = "98202d036da02547d96b9d6b0bcb779f",
+            ["init.lua"] = "20db2df17ee4f7a1fd526030aca7b34b"
+         },
+         ["cache.lua"] = "ca1941bc4f2c68d241e8b3d7f88d7886",
+         ["commands.lua"] = "ecd6d4fd7d9220c59306cb53dc210311",
+         config = {
+            ["check.lua"] = "5fdc45231fa9b01850885c663cae0a76",
+            ["init.lua"] = "39b99da068147579110faf1ffd8f127b",
+            ["internal.lua"] = "bbda5b9141d533c2a9318e5d1194454a"
+         },
+         ["constants.lua"] = "a40fd64bff08bd135d3062a3e54b0c08",
+         ["fs.lua"] = "83e6a6b0eb825def61a8d5dad4d7e35c",
+         ["fzy.lua"] = "24f4ac0f752981697e7bb771d2a8e1b6",
+         ["health.lua"] = "a889e02b8f34b40a045556b01a61ac14",
+         ["init.lua"] = "98d867eb3e28d3f0972c4ec8af197bd5",
+         ["loader.lua"] = "72fb0da554b89e4028482b655e751cae",
+         ["log.lua"] = "28a25b76baa4972d7ec283de8e57f5d3",
+         ["luarocks.lua"] = "8f64cb981aef9b255380999cb2359aca",
+         ["meta.lua"] = "4e2fd6dfa2a4d65eb923e1192dfedfe4",
+         operations = {
+            ["add.lua"] = "e97dbbe5b0cd903d0a7e868779f31231",
+            ["handlers.lua"] = "6bada732c0da3ba5bddf8686da6a2601",
+            helpers = {
+               ["init.lua"] = "1b6fc7541ccb1dc51e1994a2520739f0",
+               ["multi_mut_rocks_toml_wrapper.lua"] = "9a32b67c31e2c48296fcd7dc4afc1f4c"
+            },
+            ["init.lua"] = "bd7c4237f4fbe87d87b965db9709e00a",
+            ["parser.lua"] = "49055c99579edad4ec259fd19c8423e3",
+            ["pin.lua"] = "6db87d248eae8d27116e7c2f06c01d6e",
+            ["prune.lua"] = "4283775bc05678a2cf9d78e56242caf5",
+            ["sync.lua"] = "6ed31076d323f3bd95e110152a69784b",
+            ["unpin.lua"] = "7c3fb94840e2591004033564e5a6d53f",
+            ["update.lua"] = "10e6071bb2cfd32e15e93c5a584240cb"
+         },
+         ["runtime.lua"] = "70184960a2e0714cc00be0f7acc4c9d7",
+         ["state.lua"] = "d2cb417be1deac076a0039752a8186c6",
+         ["types.lua"] = "5280e9f2ee7fab50d3a0c5228ab294c4"
+      }
+   },
+   plugin = {
+      ["rocks.lua"] = "bc62b5b07de4c6d57e18f381991f6ce2"
+   },
+   ["rocks.nvim-2.42.2-1.rockspec"] = "4c2bf1e9f7b639ae33da9d5633138bda"
+}
