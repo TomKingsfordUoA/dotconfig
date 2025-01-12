@@ -1,1 +1,0 @@
-{"primary_source":{"type":"registry+v1","id":"pkg:pypi\/ruff@0.8.2"},"schema_version":"1.1","name":"ruff","metrics":{"start_time":1733636201901,"completion_time":1733636204999},"links":{"bin":{"ruff":"venv\/bin\/ruff"},"share":{},"opt":{}},"secondary_sources":[]}

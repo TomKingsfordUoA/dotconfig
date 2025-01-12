@@ -53,4 +53,4 @@ RUN git config --global --add safe.directory "*"
 
 WORKDIR /root/projects
 
-ENTRYPOINT ["/bin/bash"]
+# ENTRYPOINT  ["/bin/bash"]
