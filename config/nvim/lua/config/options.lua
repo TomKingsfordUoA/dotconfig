@@ -6,3 +6,6 @@
 -- vim.g.lazyvim_python_ruff = "ruff"
 
 vim.g.lazyvim_cmp = "nvim-cmp"
+
+vim.opt.number = true
+vim.opt.relativenumber = false

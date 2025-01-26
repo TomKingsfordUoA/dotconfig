@@ -13,10 +13,15 @@ RUN apt install -y python3 python3-venv python3-pip
 WORKDIR /root/_ext
 RUN mkdir bin
 RUN python3 -m venv venv
-ENV PATH="$PATH:/root/_ext/venv/bin:/root/_ext/bin"
+ENV PATH="$PATH:/root/_ext/venv/bin:/root/.local/bin"
+RUN mkdir -p /root/.local/bin
 RUN ./venv/bin/python3 -m pip install uv pwntools
-RUN ln -s $(pwd)/venv/bin/uv /bin/uv
-RUN ln -s $(pwd)/venv/bin/pwn /bin/pwn
+RUN ln -s $(pwd)/venv/bin/uv /root/.local/bin/uv
+RUN ln -s $(pwd)/venv/bin/pwn /root/.local/bin/pwn
+
+# Install various python versions:
+# nb that installing to PATH is experimental hence --preview 
+RUN for VERSION in 3.7 3.8 3.9 3.10 3.11 3.12 3.13; do uv python install $VERSION --preview; done
 
 # Install lua rocks (package manager)
 WORKDIR /root/_ext/luarocks
@@ -40,9 +45,9 @@ RUN pip install ruff
 # Install fzf, ripgrep, etc.
 RUN wget https://github.com/junegunn/fzf/releases/download/v0.57.0/fzf-0.57.0-linux_amd64.tar.gz
 RUN tar -xzf fzf*.tar.gz
-RUN mv fzf /root/_ext/bin
-# TODO install ripgrep
-# TODO install fd-find 
+RUN mv fzf /root/.local/bin  # HACK make the local bin directory an ENV variable
+# TODO install ripgrep from latest release
+# TODO install fd-find from latest release
 RUN apt install -y ripgrep fd-find
 
 # Install language servers, linters, etc.
