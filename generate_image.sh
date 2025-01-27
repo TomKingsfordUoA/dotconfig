@@ -8,6 +8,9 @@ if git status | grep ":" >/dev/null; then
 fi
 
 OUTPUT_DIR="dist"
+OUTPUT_FILE=$(git rev-parse --short HEAD).
 mkdir -p $OUTPUT_DIR
 sudo docker build .
-sudo docker image save $(sudo docker build -q .) >$OUTPUT_DIR/$(git rev-parse --short HEAD).tar
+sudo docker image save $(sudo docker build -q .) >$OUTPUT_DIR/$OUTPUT_FILE.tar
+cd $OUTPUT_DIR
+tar -czvf $OUTPUT_FILE.tgz $OUTPUT_FILE.tar
