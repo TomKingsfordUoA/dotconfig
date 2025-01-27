@@ -22,6 +22,10 @@ require("lazy").setup({
     { import = "plugins" },
     -- { "folke/trouble.nvim" },
     { "NeogitOrg/neogit" },
+    { "folke/todo-comments.nvim", opts = { 
+	    highlight = { pattern = {[[.*<(KEYWORDS)\s*\(.*\):]], [[.*<(KEYWORDS)\s*:]]} } } ,
+	    search = {  pattern = {[[.*<(KEYWORDS)\s*\(.*\):]], [[.*<(KEYWORDS)\s*:]]}  }
+    },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
