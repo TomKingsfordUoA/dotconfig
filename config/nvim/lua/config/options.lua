@@ -9,3 +9,5 @@ vim.g.lazyvim_cmp = "nvim-cmp"
 
 vim.opt.number = true
 vim.opt.relativenumber = false
+
+vim.opt.shell = "nu"

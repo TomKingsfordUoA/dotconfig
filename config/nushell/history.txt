@@ -1,0 +1,391 @@
+ls
+exit
+ls
+cd ~/projects/
+ls
+cd _ext/nushell/
+ls
+whoch
+ls
+which
+ls
+chsh
+ls
+exit
+target/release/nu
+exit
+cargo run --release
+exit
+ls
+exit
+chsh
+exit
+ls
+ls -al
+ls -al | sort-by size
+ls -al | sort-by size asc
+help sort-by
+help sort-by | less
+help sort-by
+ls -al | sort-by size --reverse
+glop *.txt
+glob *.txt
+ls
+docker os
+sudo docker ps
+sudo docker ps -a
+sudo docker ps -a | where IMAGE="hello-world"
+sudo docker ps -a
+sudo docker ps -a | detect
+sudo docker ps -a | detect columns
+sudo docker ps -a | detect columns | where image="hello-world"
+sudo docker ps -a | detect columns | where imag=e="hello-world"
+sudo docker ps -a | detect columns | where image=="hello-world"
+sudo docker ps -a | detect columns | where image "hello-world"
+sudo docker ps -a | detect columns | where IMAGE = "hello-world"
+sudo docker ps -a | detect columns | where IMAGE == "hello-world"
+sudo docker ps -a | detect columns | where IMAGE == "hello-world2"
+exit
+cd projects/htb/challenges/
+ls
+cd ..
+ls
+mv htb/challenges .
+ls
+cd challenges/
+ls
+cd ..
+ls
+rm -r htb
+cd challenges/
+ls
+cd authorout/
+ls
+ghidra
+gdb auth-or-out
+cd authorout/
+uv run python3 exploit.py
+cd authorout/
+uv run python3 exploit.py
+./auth-or-out
+uv run python3 exploit.py
+auth-or-out
+./auth-or-out
+uv run python3 exploit.py
+cd bin
+ls
+./Obsidian-1.7.7.AppImage
+uv run python3 exploit_walkthrough.py
+python3
+uv run python3 exploit_walkthrough.py
+python3
+exit
+python3 
+exit
+nvim exploit.py
+exit
+exit
+./Obsidian-1.7.7.AppImage --no-sandbox
+sudo dpkg-reconfigure unattended-upgrades
+unattended-upgrades 
+sudo unattended-upgrades 
+sudo unattended-upgrades --help
+sudo unattended-upgrades --help-v
+sudo unattended-upgrades -v
+sudo unattended-upgrade -v
+sudo unattended-upgrades -v
+sudo apt update
+sudo unattended-upgrades -v
+sudo vim /etc/apt/apt.conf.d/50unattended-upgrades
+sudo unattended-upgrades -v
+sudo vim /etc/apt/apt.conf.d/50unattended-upgrades
+exit
+cd bin/
+ls
+ls -al
+ls bin
+vim obsidian
+chmod +x obsidian
+obsidian
+exit
+vim obsidian
+obsidian
+exit
+exit
+cd projects/challenges/
+ls
+cd authorout/
+ls
+gdb auth-or-out
+readelf -s auth-or-out
+readelf -s auth-or-out | grep main
+got
+gdb auth-or-out
+ghidra
+exit
+cd projects/challenges/
+ls
+mv `~/Downloads/Trick or Deal.zip` .
+unzip `Trick or Deal.zip`
+ls
+rm `Trick or Deal.zip`
+ls
+ls challenge/
+mv challenge/ trickordeal
+cd trickordeal/
+ls
+gdb trick_or_deal
+python3
+exit
+python3
+exit
+cd projects/challenges/
+ls
+mv `~/Downloads/Dragon Army.pdf` `~/projects/notes/Second Brain/attachments/`
+mkdir dragonarmy
+cd dragonarmy/
+mv `~/Downloads/Dragon Army.zip` .
+unzip --help
+unzip -d `Dragon Army.zip`
+unzip -d . `Dragon Army.zip`
+ls
+mv challenge/* .
+ls
+rm -r challenge/
+rm `Dragon Army.zip`
+ls
+ghidra
+gdb da
+ls
+./da
+gdb da
+nvim exploit.py
+./da
+cd dragonarmy/
+uv run python3 exploit.py
+gdb da
+uv run python3 exploit.py
+gdb da
+uv run python3 exploit.py
+gdb da
+uv run python3 exploit.py
+uv run python3 exploit.py -i
+uv run python3 -i exploit.py
+uv run python3 exploit.py 
+obsidian 
+gdb da
+cd ..
+ls
+cd authorout/
+ls
+gdb auth-or-out
+cd ../dragonarmy/
+ls
+nvim exploit.py
+exit
+ls
+cd dragonarmy/
+ls
+./da
+nvim exploit.py
+exit
+cd projects/challenges/dragonarmy/
+obsidian 
+apt search foxit
+exit
+nvim exploit.py
+:q
+exit
+cd 
+cd projects/challenges/
+ls
+cd dragonarmy/
+ls
+cd dragonarmy/
+ls
+uv run python3 exploit.py
+uv run python3 -m pdb exploit.py
+uv run python3  exploit.py
+uv run python3 -m pdb exploit.py
+uv run python3  exploit.py
+uv run python3 -m pdb exploit.py
+exit
+nvim .
+cd projects/challenges/dragonarmy/
+cd dragonarmy/
+python3 -m pdb exploit.py
+uv run python3 -m pdb exploit.py
+uv run python3  exploit.py
+cd projects/challenges/dragonarmy/
+uv run python3  exploit.py
+cd dragonarmy/
+uv run python3  exploit.py
+obsidian
+exit
+nvim exploit.py
+exit
+sudo apt update
+sudo apt upgrade
+exit
+obsidna
+obsidian
+cd projects/challenges/dragonarmy/
+ls
+nvim exploit_7rocky.py
+nvim exploit.py
+uv run python3 exploit_7rocky.py
+cd dragonarmy/
+uv run python3 exploit_7rocky.py
+ls
+uv run python3 exploit_7rocky.py
+ls
+cd glibc/
+ls
+md5sum libc.so.6
+cd ..
+strings glibc/libc.so.6
+strings glibc/libc.so.6 | grep version
+readelf -s glibc/libc.so.6
+readelf -s glibc/libc.so.6 | grep arena
+readelf -s glibc/libc.so.6 | grep malloc
+readelf -s glibc/libc.so.6 | grep write
+readelf -s glibc/libc.so.6 | grep free
+readelf -s glibc/libc.so.6 | grep free@
+uv run python34
+nvim exploit_7rocky.py
+exit
+obsidian 
+cd projects/challenges/dragonarmy/
+man gdb
+cd projects/challenges/dragonarmy/
+gdb ./da
+gdb
+gdb -q ./da
+ls
+readelf -s glibc/libc.so.6
+gdb da
+nm da
+cd projects/challenges/dragonarmy/
+readelf -s glibc/libc.so.6 | grep malloc@
+readelf -s glibc/libc.so.6 | grep free@
+readelf -s glibc/libc.so.6 | grep malloc@
+ldd --help
+ldd 
+ldd sa
+ldd da
+find / -name libc.so.6
+help find
+ls * 
+ls /* 
+ls /**
+ls -a /**
+ls --help
+ls -a /** | where name == "libc.so.6"
+ls -a ** | where name == "libc.so.6"
+ls -a ** | where name == "libc.so.6<\n>"
+ls
+ls -a **/** | where name == "libc.so.6<\n>"
+ls -a **
+ls -a *
+ls -a **
+ls -a **/*
+ls -a **/**
+ls -a **/*
+ls -a /**/*
+ls -a /**/* | where name == "libc.so.6"
+ls -a /usr/**/* | where name == "libc.so.6"
+ls -a --ignore-errors /usr/**/* | where name == "libc.so.6"
+help ls
+ls -a /usr/**/* | where name == "libc.so.6"
+ls -as /usr/**/* | where name == "libc.so.6"
+ls -as **/* | where name == "libc.so.6"
+ls -a **/* | where name == "libc.so.6"
+ls -as /usr/**/* | where name == "libc.so.6"
+ls -as /usr/**/* | hjeadf
+ls -as /usr/**/* | head
+ls -as /usr/**/* | head | where name == "libc.so.6"
+whic head
+which head
+ls -as /usr/**/* | first | where name == "libc.so.6"
+ls -as /usr/**/* | first 10 | where name == "libc.so.6"
+ls -as /usr/**/* | first 10 
+ls -as /usr/**/* | first 10 | where name == "libc.so.6"
+ls -as /usr/**/* | where name == "libc.so.6"
+exit
+gdb da
+exit
+cd projects/
+ls
+cd dotconfig/
+ls
+nvim Dockerfile
+ls
+./start_online.sh
+nvim Dockerfile
+./start_online.sh
+nvim Dockerfile
+./start_online.sh
+ls
+ls config/
+nvim config/nvim/lua/config/options.lua
+./start_online.sh
+git status
+git add -u
+git commit -m "feat: add various python version to docker image; disable relative line numbering in neovim"
+git push
+obsidian 
+cd projects/challenges/
+mkdir spellbook
+cd spellbook/
+mv ~/Downloads/Spellbook.zip .
+unzip -d . Spellbook.zip
+ls
+rm Spellbook.zip
+ls
+cat Dockerfile
+ls challenge/
+cd challenge/
+ls
+ghidra
+gdb spellbook
+cd ~/projects/dotconfig/
+git status
+ls
+ln --help
+nvim .
+./start_online.sh
+nvim .
+./start_online.sh
+nvim .
+./start_online.sh
+nvim .
+./start_online.sh
+nvim config/nvim/lua/config/options.lua
+nvim Dockerfile
+./start_online.sh
+nvim ~/.config/nushell/config.nu
+config nu
+nvim ~/.config/nushell/config.nu
+config nu
+config nu --doc
+config nu --doc | nu-highlight
+nvim ~/.config/nushell/config.nu
+$env.config.buffer_editor="nvim"
+$env.config.buffer_editor = "nvim"
+config nu
+exit
+config nu
+nvim ~/.config/nushell/config.nu
+config nu
+nvim ~/.config/nushell/env.nu
+nvim ~/.config/nushell/config.nu
+config nu -d
+nvim ~/.config/nushell/config.nu
+config nu
+exit
+config nu
+exit
+config nu
+exit
+cd projects/dotconfig/
+ls
